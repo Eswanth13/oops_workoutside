@@ -8,3 +8,5 @@ def validate_password(password):
 password = input("Enter your password: ")
 result = validate_password(password)
 print(result)
+
+
