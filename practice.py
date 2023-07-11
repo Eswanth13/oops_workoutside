@@ -45,11 +45,6 @@
 # print(maxnumber)
 
 
-# n=(int(input('enter the num:')))
-# a=1
-# for i in range(n):
-#     a=a*i
-#     print(a)
 
 #-------factorial-----
 # number = int(input("Enter a number: "))
@@ -60,7 +55,91 @@
 # print(factorial)
 
 
+#--------Fibonacci series.-----
 
+# limit=int(input('enter the number: '))
+# a=0
+# b=1
+# fibonacci_series=[]
+# while limit>=b:
+#     x=a+b
+#     if x<=limit:
+#         fibonacci_series.append(x)
+#     a=b
+#     b=x
+# print(fibonacci_series)
+
+
+#---------palindrome------
+
+# string =str(input("enter the string: "))
+# a=string[::-1]
+# if a==string:
+#     print(f'{a} is alindrome')
+# else:
+#     print(f"{a} is not a palindrom")
+
+#Another method
+# def myfun(b):
+#     a = b[::-1]
+#     if a==b:
+#         print(f'{b} is palindrome')
+#     else:
+#         print(f"{b} is not a palindrom")
+# print(myfun(input('enter the string:')))
+
+#-------Write a Python program to count the occurrence of a character in a string.---
+
+# string = input("enter a string: ")
+# letter = input("enter a letter: ")
+#
+# occurrence_count = 0
+# for char in string:
+#     if char == letter:
+#         occurrence_count += 1
+#
+# print(f"The character '{letter}' occurs {occurrence_count} times in the string.")
+#
+
+
+#------Write a Python program to find the length of a string---------
+
+# string='i am a good boyasdd'
+# count=0
+# for i in string:
+#     if i==' ':
+#         continue
+#     else:
+#         count =count +1
+# print(count)
+
+
+#Write a Python program to remove the leading and trailing whitespaces from a string.-----
+
+# string=" hello world "
+# print(string)
+# a=string.strip()
+# print(a)
+
+#----Write a Python program to remove duplicate elements from a list.
+# string=[1,2,3,9,2,3,6,8,6,3,5,6,3,4,5,7,8,9,0,2,5,6,7,8]
+# str1=[]
+# for i in string:
+#     if i not in str1:
+#         str1.append(i)
+# print(str1)
+
+#Another method
+# string=[1,2,3,9,2,3,6,8,6,3,5,6,3,4,5,7,8,9,0,2,5,123,6,7,8]
+# remove_duplicate_values=set(string)
+# print(list(remove_duplicate_values))
+
+
+#Another method
+def myfun(*args):
+    return list(set(args))
+result = myfun(1, 2, 3, 2, 4, 1, 5,7,8,9,0)
+print(tuple(result))
 
 
 
