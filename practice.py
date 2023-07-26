@@ -104,9 +104,9 @@
 
 #------Write a Python program to find the length of a string---------
 
-# string='i am a good boyasdd'
+#string='i am a good boyasdd'
 # count=0
-# for i in string:
+#for i in enumerate(string):
 #     if i==' ':
 #         continue
 #     else:
@@ -136,10 +136,71 @@
 
 
 #Another method
-def myfun(*args):
-    return list(set(args))
-result = myfun(1, 2, 3, 2, 4, 1, 5,7,8,9,0)
-print(tuple(result))
+# def myfun(*args):
+#     return list(set(args))
+# result = myfun(1, 2, 3, 2, 4, 1, 5,7,8,9,0)
+# print(tuple(result))
+
+#Write a Python program to find the greatest common divisor (GCD) of two numbers.
+
+# import math
+# print(math.lcm(63, 48))
+# print("The gcd of 60 and 48 is : ", end="")
+
+# def myfun(a,b):
+#     if b==0:
+#         return a
+#     else:
+#         return myfun(b,a%b)
+# a=int(input('enter the number a : '))
+# b=int(input('enter the number b : '))
+# print(myfun(a,b))
+
+#------Write a Python program to check if a number is a perfect square.------
+
+# import math
+# number = int(input("Enter the Number: "))
+#
+# root = math.sqrt(number)
+# if int(root) ** 2 == number:
+#     print(number, "is a perfect square")
+# else:
+#     print(number, "is not a perfect square")
+
+
+#-------Write a Python program to find the ASCII value of a character.
+# a=str(str(input('enter the value: ')))
+# print(ord(a))
+# x=1
+# print(x<<2)
+
+# def askint():
+#     while True:
+#         try:
+#             val = int(input("Please enter an integer: "))
+#         except:
+#             print("Looks like you did not enter an integer!")
+#             continue
+#         else:
+#             print("Yep that's an integer!")
+#             break
+#         finally:
+#             print("Finally, I executed!")
+#         print(val)
+# askint()
+#
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
