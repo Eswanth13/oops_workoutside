@@ -1,9 +1,10 @@
 # list1=[1,12,3,4,5,6,7,8,9]
+# #list1=[1,2,3]
 # list_sum=0
 #
 # for num in list1:
 #      list_sum=list_sum+num
-#      print(list_sum)
+# print(list_sum)
 
 # num=11351345
 # stri=str(num)
@@ -75,9 +76,9 @@
 # string =str(input("enter the string: "))
 # a=string[::-1]
 # if a==string:
-#     print(f'{a} is alindrome')
+#     print(f'{a} is palindrome')
 # else:
-#     print(f"{a} is not a palindrom")
+#     print("it is not a palindrom")
 
 #Another method
 # def myfun(b):
@@ -191,37 +192,158 @@
 #
 
 
+# -----leap year-----
+# def myfun(year):
+#     if (year%400==0)and (year%100==0)or (year%4==0)and(year%100==0):
+#         return f'{year} is leepyear'
+#
+#     else:
+#         return f'{year} is not a leepyear'
+# a=int(input('enter a number : '))
+# print(myfun(a))
 
 
-def myfun(year):
-    if (year%400==0)and (year%100==0)or (year%4==0)and(year%100==0):
-        return f'{year} is leepyear'
+#Write a Python program to remove all vowels from a string.
 
-    else:
-        return f'{year} is not a leepyear'
-a=int(input('enter a number : '))
-print(myfun(a))
-
-
-
+# def remove_vowels(input_string):
+#     vowels = "AEIOUaeiou"
+#     result = ''.join(char for char in input_string if char not in vowels)
+#     return result
+# input_string = input("Enter a string: ")
+# output_string = remove_vowels(input_string)
+# print("String without vowels:", output_string)
 
 
-
-
-
-
-
-
-
-
-
-
-
+# ----another method----
+# def remove_vowels(input_string):
+#     vowels = "AEIOUaeiou"
+#     results=''
+#     for char in input_string:
+#         if char not in vowels:
+#             results += char
+#     return results
+# input_string = input("Enter a string: ")
+# output_string = remove_vowels(input_string)
+# print("String without vowels:", output_string)
 
 
 
+#Write a Python program to find the number of uppercase and lowercase letters in a string.
+
+# def count_upper_lower(text):
+#     upper_count = 0
+#     lower_count = 0
+#
+#     for char in text:
+#         if char.isupper():
+#             upper_count += 1
+#         elif char.islower():
+#             lower_count += 1
+#
+#     print(f'upper_count{upper_count}, lower_count{lower_count}')
+#
+#
+# input_string = input("Enter a string: ")
+# count_upper_lower(input_string)
+#for i in range(len(check)-2,len(check)):
+#     check[i].click()
+
+# check=["*","$","@","%","^"]
+# print(len(check))
+# for i in range(len(check)-2,len(check)):
+#      print(i)
+
+# print("Question1: 2 +3 : ", 2 / 3)
+# try:
+#      print("Question2: 1/0 : ",1/0)
+# except:
+#      print("cannot divide by zero, changing divisor, Question2: 1/1 : ",1/1)
+# print("Question3: 1/1 : ",1/1)
+
+
+# def myfun(*a):
+#     return sum(a)
+# #c=myfun(2,3)
+# print(myfun(2,3,4))
+
+#
+# x=lambda a:type(a)
+# print(x(123))
+
+
+# x=lambda *a: sum(a)
+# print(x(2,3,4,4,5,78,9,0,))
 
 
 
+
+
+
+
+# list1=[1,12,3,4,5,6,7,8,9]
+# sum_list=0
+#
+# for i in list1:
+#     sum_list=sum_list+i
+# print(sum_list)
+
+
+#list1=[1,12,3,4,5,6,7,8,9]
+
+# def myfun(*args):
+#     print(sum(args))
+# myfun(1,12,3,4,5,6,7,8,9,)
+
+# a=int(input("enter a number: "))
+# b=str(a)
+# sum_int=0
+# for i in b:
+#     sum_int=sum_int+int(i)
+#print(sum_int)
+
+#---------------------------
+# for r in range(1,6):
+#     for c in range(1,6-r+1):
+#         print("*", end=" ")
+#     print( )
+#--------------------
+
+# import math
+# row = int(input("Enter the max rows : "))
+# col = row * 2 - 1
+# for r in range(1,row+1):
+#     for c in range(1,col+1):
+#         for index in range(1,r):
+#
+#     print()
+
+#-------------------------------
+# Items=["esw","asd","sdf","ghj","qwe"]
+# elem=[]
+# for elements in Items:
+#     elm=elements
+#     elem.append(elm)
+#
+# elem.sort(reverse=True)
+# print(elem)
+
+#-------------------------
+#Write a Python program to generate the Fibonacci .series
+# limit=int(input("enter a number: "))
+# a=1
+# b=1
+# Fibonacci_series=[]
+# while limit>=b:
+#     x=a+b
+#     if x<=limit:
+#         Fibonacci_series.append(x)
+#     a=b
+#     b=x
+# print(Fibonacci_series)
+
+#--------------------------
+a="1 2 3  4 5 6"
+for i in a.split():
+    print(type(int(i)))
 
 
